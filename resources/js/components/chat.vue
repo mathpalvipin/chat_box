@@ -1,7 +1,7 @@
 <template>
 	
 <div id="chatapp" >
-	
+	<div>{{user.id}}</div>
 	<conversation :messages="messages" :contact="selectedcontact"   id="messages" @new="newmessage"></conversation>
 	
 	<contactlist :contacts="contacts" @selected="startedconversationwith" id="contact"></contactlist>
