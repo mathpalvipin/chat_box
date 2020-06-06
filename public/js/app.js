@@ -44701,6 +44701,8 @@ var render = function() {
     "div",
     { attrs: { id: "chatapp" } },
     [
+      _c("div", [_vm._v(_vm._s(_vm.user.id))]),
+      _vm._v(" "),
       _c("conversation", {
         attrs: {
           messages: _vm.messages,
