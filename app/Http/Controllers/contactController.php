@@ -10,7 +10,7 @@ class contactController extends Controller
 {
 	function get(){
 		 $contacts = User::where('id', '!=', auth()->id())->get();
-		 $unreadid=Messages::select(\DB::raw('from as sender_id, count(from) as messages_count'))
+		 $unreadid=Messages::select(\DB::raw('"from" as sender_id, count("from") as messages_count'))
 		 ->where('to',auth()->id())
 		 ->where('read',false)
 		 ->groupBy('from')
