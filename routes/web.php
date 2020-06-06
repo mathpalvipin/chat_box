@@ -17,8 +17,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
 
+
+
+
+
+
+
+
+
+
+
+Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/contacts', 'contactController@get');
 Route::get('/conversation/{id}', 'contactController@getMessages');
@@ -27,13 +37,4 @@ Route::get('/home/1', function(){
 });
 Route::post('/conversation/send', 'contactController@send');
 Route::get('/info', function(){ phpinfo(); });
-
-
-
-
-
-
-
-Auth::routes();
-
 Route::get('/home', 'HomeController@index')->name('home');
