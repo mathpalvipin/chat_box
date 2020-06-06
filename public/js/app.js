@@ -1977,8 +1977,6 @@ __webpack_require__.r(__webpack_exports__);
     var _this = this;
 
     Echo["private"]('messages.' + this.user.id).listen('NewMessage', function (e) {
-      console.log('messages.' + _this.user.id);
-
       _this.handleIncoming(e.message);
     });
     axios.get('/contacts').then(function (response) {
@@ -44703,8 +44701,6 @@ var render = function() {
     "div",
     { attrs: { id: "chatapp" } },
     [
-      _c("div", [_vm._v(_vm._s(_vm.user))]),
-      _vm._v(" "),
       _c("conversation", {
         attrs: {
           messages: _vm.messages,

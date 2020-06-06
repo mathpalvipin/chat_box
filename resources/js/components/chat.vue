@@ -1,7 +1,7 @@
 <template>
 	
 <div id="chatapp" >
-	<div>{{user}}</div>
+	
 	<conversation :messages="messages" :contact="selectedcontact"   id="messages" @new="newmessage"></conversation>
 	
 	<contactlist :contacts="contacts" @selected="startedconversationwith" id="contact"></contactlist>
@@ -34,7 +34,7 @@
 	mounted(){
 		 Echo.private('messages.'+this.user.id)
 		 .listen('NewMessage',(e)=>{
-		 	console.log('messages.'+this.user.id);
+		 
 		 	
 		 	this.handleIncoming(e.message);
 
