@@ -3,7 +3,7 @@
  composer install
  copy .env.example .env 
  ```
- create a database  withname photo
+ create a database  withname "photo" <br>
  ( then change database name there i.e. "chat_box" in my case)
  ```
   php artisan migrate 
