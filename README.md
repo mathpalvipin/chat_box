@@ -18,12 +18,7 @@ http://still-chamber-85568.herokuapp.com/
 npm install 
 npm run watch 
 ```
-for photo content public/storage  to storage/app/public/
-``` 
-//first delete the storage  folder from public( if it already there)
 
-php artisan storage:link
-```
 ```
 php artisan serve
 ```
