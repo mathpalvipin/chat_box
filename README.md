@@ -23,4 +23,11 @@ npm run watch
 php artisan serve
 ```
 
-
+for deployement only 
+to make all call to https instead of http (except when on  'LOCAl')
+add this to boot() in app/providers/appserviceprovider.php
+```
+If (env('APP_ENV') !== 'local') {
+            $this->app['request']->server->set('HTTPS', true);
+        }
+        ```
