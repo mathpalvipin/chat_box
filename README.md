@@ -5,9 +5,17 @@ http://still-chamber-85568.herokuapp.com/
 
  bash
  ```
+ composer update
+ ```
+
+ bash
+ ```
  composer install
  copy .env.example .env 
  ```
+
+copy paste the pusher detail.
+
  create a database  withname "chat_box
  ( then change database name there i.e. "chat_box" in my case)
  ```
